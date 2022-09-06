@@ -4,7 +4,8 @@ public class DigitsSum {
     public void printDigitsSum(int t){
         int sum = 0;
         t = Math.abs(t);
-        for (int i = 0; i < Integer.toString(t).length(); i++) {
+        int length = Integer.toString(t).length();
+        for (int i = 0; i < length; i++) {
             sum += (t % 10);
             t /= 10;
         }
